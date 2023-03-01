@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virgil Cunningham</title>
+    <link rel="icon" type="png" href="img/computer.png">
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!--adding fontstyle from googlefonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script> 
+    <!--adding fontawasome icons CDN link-->
+    <script src="https://kit.fontawesome.com/262d7ef081.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="container-fluid">
+        <nav class="nav fixed-top justify-content-between " id="navbar">
+            <ul class="nav">
+                <li class="nav-item"><a class="nav-link" href="#homepage">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#aboutme">About me</a></li>
+                <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact_form">Contact</a></li>
+            </ul>              
+            <ul class="nav" id="contact">
+                <li class="nav-item"><a class="nav-link" href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><i class="fab fa-instagram"></i></a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><i class="fab fa-twitter"></i></a></li>
+                <button class="switch" id="switch">
+                    <span><i class="fas fa-sun"></i></span>
+                    <span><i class="fas fa-moon"></i></span>
+                </button>
+            </ul>
+        </nav>
+    </header>    
+    <main class="conteiner-fluid row" id="homepage"><!--homepage-->
+        <div id="text-presentation">
+            <div id="text">
+                <h1>Hello, Im Virgil Cunningham</h1>
+                <p>Im a web developer and web designer</p> 
+            </div>   
+        </div>
+    </main> 
+    <div class="container"  id="aboutme"><!--about me section-->
+        <section class="row" id="content">
+            <aside class="col-sm-12 col-md-4"id="personal-information">
+                <img src="https://randomuser.me/api/portraits/men/55.jpg" alt="picture_of_Virgil_Cunningham">
+                <h2>Im Virgil Cunningham</h2>
+            </aside>    
+            <article class="col-sm-12 col-md-8">
+                <h2>What services do I do?</h2>
+                <div class="container" id="description">
+                    <p>Freelance web developer and web designer with more than 10 years of experience.</p> 
+                    <p>Currently I design, redesign and program new web application projects and sites, both client side (Front-end, UX / UI) and server side (Back-end).</p>
+                    <p>Continuously learning and acquiring new skills based on current and future demands and technological trends in the field of design and development of web applications in general.</p>
+                    <p>Passionate about the work I do, offering and contributing my knowledge, skills and experience, as well as new ideas, solutions, customization and quality monitoring to the client and their objective in each project.</p>
+                </div>    
+            </article>
+        </section> 
+    </div> 
+    <section class="container" id="experience"><!--experience section-->
+        <article>
+            <h2>Experience</h2>
+            <h3>2018-Present. Programmer, IT Technical Services, Bilbao</h3>
+            <ul>
+                <li>Taking requirements with the client</li>
+                <li>Requirements analysis and application design</li>
+                <li>Application development using Javascript, PHP, MySQL</li>
+                <li>Customer technical support</li>
+            </ul>
+            <h3>2014-2018. Full Stack Programmer, Finanbest, Madrid</h3>
+            <ul>
+                <li>Front End and Back End development of applications with Typescript, Javascript, PHP, MySQL, HTML5</li>
+                <li>Application testing</li>
+                <li>Troubleshooting</li>
+            </ul>
+            <h3>2011-2014. Web programmer, Sistemas Informáticos SL, Madrid</h3>
+            <ul>
+                <li>Development of web applications for clients of the company in the financial sector using Javascript, PHP</li>
+                <li>Web application maintenance</li>
+                <li>HTML5, CSS3, Bootstrap layout</li>
+                <li>Manejo de datos XML, JSON</li>
+            </ul>
+        </article> 
+    </section>  
+    <section class="container" id="skills"> <!-- skills section -->
+        <article>
+            <h2>Skills</h2>
+            <ul>
+                <li><i class="fas fa-check"></i>Analytical capacity</li>
+                <li><i class="fas fa-check"></i>Management of incidents</li>
+                <li><i class="fas fa-check"></i>Work under pressure</li>
+                <li><i class="fas fa-check"></i>Software Engineering</li>
+                <li><i class="fas fa-check"></i>Development of mobile and web apps</li>
+                <li><i class="fas fa-check"></i>SQL Server databases</li>
+                <li><i class="fas fa-check"></i> AWS Cloud management</li>
+            </ul>
+        </article>   
+    </section>
+    <form  class="container" action="" method="post"  id="contact_form"><!-- contact form -->
+        <h2>Contact me</h2>
+        <p>Leave me your message and I will answer you as soon as possible</p>
+            <ul >
+                <li>
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" name="user_name" placeholder="name" required>
+                </li>
+                <li>
+                    <label for="mail" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="mail" name="user_mail" placeholder="name@example.com" required>
+                    <div id="emailHelp" class="form-text">Your email will not be shared with anyone else</div>
+                </li>
+                <li>
+                    <label for="msg" class="form-label">Message</label>
+                    <textarea id="msg" class="form-control" name="user_message" placeholder="Leave your message here..." required></textarea>
+                </li>
+                <li class="button">
+                    <button type="submit" class="btn" id="send">Enviar</button>
+                </li>
+            </ul>
+    </form>
+    <div class="container" id="socialmedia"><!--social media nav-->
+            <h2>Follow me</h2>
+            <ul class="d-flex justify-content-center">
+                <li class="nav-item"><a class="nav-link" href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><i class="fab fa-instagram"></i></a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><i class="fab fa-twitter"></i></a></li>
+            </ul>
+    </div>
+    <footer class="container-fluid">
+        <p>CV Website Template created by Agustina Naredo</p>
+    </footer>
+    <script src="function.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,181 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+#navbar{
+    padding: 8px 50px; 
+    box-shadow: 0 1px 2px #1A0000; 
+}
+html{
+    height: 100%;
+}
+body{
+    min-height: 100%;
+}
+#navbar, footer{
+    background-color: #251D3A;
+}
+.nav ul{
+    align-items: center;
+}
+.nav ul li a {
+    color: #cbbde2; 
+}
+.nav ul li a:hover{   
+    color: aliceblue;
+    transition: all .2s;
+}
+/*mode switch button*/
+.switch{
+    background-color: #251D3A;
+    border-radius: 1000px;
+    border: solid 1px #cbbde2;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    outline: none;
+}
+.switch:after{
+    content: '';
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background-color: white;
+    border-radius: 100px;
+    transition: all .2s;
+    top: 0;
+    left: 0;
+    right: unset;
+}
+.switch.active:after{
+    right: 0;
+    left: unset;
+}
+.switch span{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    background: none;
+    color: #cbbde2;
+}
+#homepage{
+    background-image: url(img/compus.gif);
+    background-size: cover;
+    height: 100%;
+}
+#text-presentation{
+    background-color: transparent;
+    text-align: center;
+    padding-top: 250px;
+    padding-bottom: 250px;
+}
+#text{
+    color: white;
+}
+li{
+    list-style-type: none; 
+}
+#aboutme, #experience, #skills{
+    height: 100%;
+    padding-top: 100px;
+}
+#skills{
+    margin-top: 150px;
+}
+#content{
+    border-radius: 4px;
+    border-bottom: solid 3px #A459D1;
+    box-shadow: 0 3px 6px #1A0000; 
+    padding:20px;
+}
+#aboutme aside img{
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+    border: 3px #A459D1 solid;
+    height: 200px;
+}
+#aboutme aside h2{
+    text-align: center;
+    font-size: 18px;
+}
+article h2{
+    color: #251D3A; 
+}
+article h3{
+    color:#A459D1;
+    font-size: 20px;
+    padding: 30px 10px 20px;
+}
+#experience article ul, #skills ul{
+    border-left: 2px solid #A459D1;
+}
+#experience ul li, #skills ul li{
+    font-size: 18px;
+}
+#contact_form{
+    border-radius: 4px;
+    box-shadow: 0 3px 6px #1A0000; 
+    padding: 20px;
+    width: 500px;
+    margin-bottom: 50px;
+}
+form h2{
+    text-align: center;
+}
+#socialmedia ul li{
+    padding-inline: 8px;    
+}
+#socialmedia ul li a:hover{
+    color: #A459D1;
+    transition: all .2s;
+}
+#socialmedia ul{
+    padding-left: 0px;
+}
+#socialmedia{
+    text-align: center;
+}
+#socialmedia h2{
+    color: #A459D1;
+}
+footer p{
+    color:#EEEEEE;
+    text-align: center;
+}
+#emailHelp{
+    color: #cbbde2;
+}
+.fa-check{
+    color: #A459D1;
+    font-size: 10px;
+    margin-right: 5px;
+}
+/* dark mode */
+body.dark, body.dark #navbar{
+    background-color: #000000;
+}
+body.dark #navbar{
+    box-shadow:0 1px 1px #EEEEEE;
+}
+body.dark li{
+    color: #7F8487;
+}
+body.dark h2{
+    color: aliceblue;
+}
+body.dark #aboutme aside img{
+    border-color: #7F8487;
+}
+body.dark h2{
+    color: whitesmoke;
+}
+body.dark #text{
+    color: white;
+}
+body.dark p{
+   color: #F0EEED;
+}
+body.dark #contact_form{
+    box-shadow: 0 3px 6px #804674; 
+}
